@@ -1,6 +1,6 @@
 # SNS Decoding and Compliance Notification Infrastructure
 
-This repository contains Terraform configurations and related code to set up an AWS Lambda function that decodes SNS messages, processes compliance notifications, and sends email alerts using SNS. The infrastructure includes IAM roles and policies, SNS topics, SQS queues, and a Lambda function.
+This repository contains Terraform configurations and related code to set up an AWS Lambda function that decodes SQS messages, processes compliance notifications, and sends email alerts using SNS. The infrastructure includes IAM roles and policies, SNS topics, SQS queues, and a Lambda function.
 
 ## Project Structure
 
@@ -31,8 +31,8 @@ This repository contains Terraform configurations and related code to set up an 
 #### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
-cd <repository-directory>
+git clone https://github.com/bshutterkion/compliance-check-sns-notification.git
+cd compliance-check-sns-notification
 ```
 
 #### 2. Modify Variables
