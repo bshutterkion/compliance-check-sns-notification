@@ -19,11 +19,23 @@ variable "sns_output_topic_name" {
 variable "email_subscriptions" {
   description = "A list of email addresses to subscribe to the SNS topic."
   type        = list(string)
-  default     = ["bshutter@kion.io"]
+  default     = [""]
 }
 
 variable "lambda_function_name" {
   description = "The name of the Lambda function"
   type        = string
   default     = "sns-decoder"
+}
+
+variable "sqs_input_queue_name" {
+  description = "The name of the SQS queue to receive input messages."
+  type        = string
+  default     = "kion-input-sqs-queue"
+}
+
+variable "kion_url" {
+  description = "The base URL for the Kion portal."
+  type        = string
+  default     = ""
 }
